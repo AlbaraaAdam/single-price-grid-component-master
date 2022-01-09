@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Outfit:wght@300;400;600&family=Poppins:wght@300;400;600&family=Spartan:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins";
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: hsl(204, 43%, 93%);
+}
+.main {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 0.5em;
+  margin-top: 4em;
+}
+.sec-sub {
+  display: flex;
+  flex-direction: column;
+}
+.first {
+  padding: 1.5em;
+}
+.first h3 {
+  color: hsl(179, 62%, 43%);
+}
+.first .sub {
+  color: hsl(71, 73%, 54%);
+  margin: 1.5em 0;
+  font-weight: 700;
+}
+.first .par {
+  color: hsl(218, 22%, 67%);
+  line-height: 2em;
+  font-size: 16px;
+}
+.sec {
+  padding: 1.5em;
+  background: hsl(179, 62%, 43%);
+  color: white;
+}
+.sec h3 {
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.61);
+  display: flex;
+}
+span {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.price div {
+  margin-top: 0.6em;
+  margin-left: 0.6em;
+}
+.sec p {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-weight: lighter;
+}
+button {
+  width: 100%;
+  padding: 1.3em 2em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  background: hsl(71, 73%, 54%);
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+}
+button:hover {
+  color: hsl(71, 73%, 54%);
+  background: white;
+}
+.third {
+  padding: 1.5em;
+  background: hsl(179, 60%, 49%);
+  color: white;
+  border-radius: 0 0 0.5em 0.5em;
+}
+.third p {
+  margin-top: 1.5em;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.61);
+  font-size: 16px;
+}
+footer {
+  justify-content: flex-end;
+}
+@media (min-width: 720px) {
+  body {
+    overflow: hidden;
+  }
+  .main {
+    width: 720px;
+  }
+  .first {
+    padding: 2em;
+  }
+  .sec-sub {
+    flex-direction: row;
+  }
+  .sec {
+    width: 50%;
+    border-radius: 0 0 0 0.5em;
+    padding: 2em;
+  }
+  .price {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  .third {
+    width: 50%;
+    border-radius: 0 0 0.5em 0;
+    padding: 2em;
+  }
+}
